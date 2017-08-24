@@ -5,7 +5,7 @@ require "perceptron/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "perceptron"
-  spec.version       = "0.1.1"
+  spec.version       = "0.3.0"
   spec.authors       = ["Alessandro Noiato", "Alistair Kung", "Corina Gheorghe", "Jini Coroneo", "Tom Scanlon"]
   spec.email         = ["doctorboredom@hotmail.com"]
 
@@ -33,5 +33,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.15"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec"
+  spec.add_development_dependency "rspec", "~> 3.6"
 end
