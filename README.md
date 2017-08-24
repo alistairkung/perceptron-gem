@@ -22,11 +22,18 @@ Or install it yourself as:
 
 ## Usage
 
-Instantiate a new Perceptron with the desired number of features to track. The perceptron accepts an array of hashes of the form {:vector => Vector[...], :expected => number} as training input.   
+Instantiate a new Perceptron with the desired number of features to track. 
 ```ruby 
 Perceptron.create(features_number) 
   ```
-
+The perceptron accepts a hash of the form {:vector => Vector[...], :expected => number} as training input.   
+```ruby
+Perceptron.train({:vector => Vector[0, 1, 0, 1], :expected => 0})
+```
+To make a prediction just write 
+```ruby
+Perceptron.predict(Vector[your_array])
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
