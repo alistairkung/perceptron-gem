@@ -32,7 +32,7 @@ Perceptron.train({:vector => Vector[0, 1, 0, 1], :expected => 0})
 ```
 To make a prediction just write 
 ```ruby
-Perceptron.predict(Vector[your_array])
+Perceptron.predict(Vector[0,3,6,7])
 ```
 ## Development
 
